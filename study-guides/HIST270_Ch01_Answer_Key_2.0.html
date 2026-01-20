@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>HIST 270 — Answer Key 2.0 — Chapter 1</title>
+<style>:root{
+  --paper:#f3efe6;
+  --ink:#2a2a26;
+  --muted:#5a5a52;
+  --card:#ffffff;
+  --border:#d7d1c3;
+  --accent:#8a2d3c;
+  --accent2:#5a2f69;
+  --shadow: 0 10px 26px rgba(0,0,0,.08);
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.35;
+}
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 18px 28px;
+}
+.banner{
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  color: #f6f2ea;
+  padding: 20px 18px 18px;
+  border-bottom: 3px solid rgba(255,255,255,.2);
+}
+.banner-inner{
+  max-width: 980px;
+  margin: 0 auto;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.banner h1{
+  margin:0 0 6px;
+  font-size: 22px;
+  letter-spacing:.2px;
+}
+.banner .sub{
+  margin:0;
+  opacity:.95;
+  font-size: 14px;
+}
+.tip{
+  background:#111;
+  color:#fff;
+  padding:10px 12px;
+  border-radius:10px;
+  max-width: 360px;
+  border: 2px solid rgba(255,255,255,.25);
+}
+.tip strong{display:block; font-size: 13px; letter-spacing:.4px;}
+.tip span{display:block; font-size: 12.5px; opacity:.95; margin-top:2px;}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 14px;
+  margin: 14px 0;
+}
+.card h2{
+  margin:0 0 10px;
+  font-size: 18px;
+  color: #1f1f1b;
+}
+.kicker{
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top:-4px;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align:center;
+}
+/* Part I */
+.takeaway{
+  border:1px dashed rgba(0,0,0,.16);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  margin: 10px 0;
+}
+.takeaway h3{
+  margin:0 0 6px;
+  font-size: 15.5px;
+  color:#1f1f1b;
+}
+.takeaway ul{margin: 0; padding-left: 18px;}
+.takeaway li{margin: 5px 0;}
+/* Checkboxes */
+.check-grid{display:grid; grid-template-columns: 1fr; gap:10px;}
+.check-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size: 14px;
+}
+.box{
+  width: 16px; height: 16px;
+  border: 2px solid #3a3a34;
+  border-radius: 3px;
+  margin-top:2px;
+  flex:0 0 auto;
+  background:#fff;
+}
+/* Key Terms table */
+.term-table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.term-table td{vertical-align:top; width:50%;}
+.term-box{
+  border:1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  background: #fffdf8;
+}
+.term-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:8px;
+}
+.term-title{font-weight:700; font-size: 14.5px;}
+.tag{
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.14);
+  color:#2b2b26;
+  background:#f2efe6;
+  white-space:nowrap;
+}
+.term-section{margin-top:10px;}
+.term-label{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing:.2px;
+}
+.write-area{border:1px solid rgba(0,0,0,.16); border-radius:10px; padding: 8px 10px; background:#fff;}
+.write-line{
+  height: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.28);
+}
+.write-line:last-child{border-bottom:none;}
+/* Fill in the blank */
+.fill-wrap{display:flex; flex-direction:column; gap:10px;}
+.fill-item{display:flex; gap:10px; align-items:flex-start; font-size: 14px;}
+.fill-num{width: 28px; font-weight:700;}
+.blank{
+  display:inline-block;
+  border-bottom: 2px solid #333;
+  transform: translateY(-1px);
+  margin: 0 .25em;
+}
+/* Matching table */
+.match-table{
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.match-table th, .match-table td{
+  border:1px solid var(--border);
+  padding: 10px 10px;
+  vertical-align:top;
+}
+.match-table th{
+  background:#f7f3ea;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing:.6px;
+}
+.match-col ol{margin:0; padding-left: 18px;}
+.match-col li{margin: 6px 0;}
+/* Multiple choice */
+.mc-q{border:1px solid rgba(0,0,0,.12); border-radius: 12px; padding: 12px 12px 10px; margin: 10px 0; background:#fffdf8;}
+.mc-stem{font-size:14px; margin-bottom: 8px;}
+.mc-num{font-weight:700;}
+.mc-opt{display:flex; gap:10px; margin: 6px 0; align-items:flex-start;}
+.mc-letter{font-weight:700; width: 20px;}
+/* -------- Print -------- */
+@page{
+  size: Letter;
+  margin: 0.75in;
+}
+@media print{
+  body{background:#fff;}
+  .banner{border-bottom:none;}
+  .card{box-shadow:none;}
+  .container{padding: 0;}
+  h1,h2,h3{break-after:avoid-page;}
+  .card, .takeaway, .term-box, .mc-q{break-inside: avoid; page-break-inside: avoid;}
+  .term-table{border-spacing: 8px;}
+  .tip{border:2px solid #000;}
+  a{color:inherit; text-decoration:none;}
+}
+.key-item{border:1px solid rgba(0,0,0,.12); border-radius:12px; padding:12px 12px 10px; margin:10px 0; background:#fffdf8;}
+.key-label{font-weight:700; margin-bottom:6px;}
+.key-answer{margin-bottom:8px; font-size: 14px;}
+.key-proof{border-top:1px solid rgba(0,0,0,.10); padding-top:8px;}
+.key-quote{font-style:italic; margin-bottom:6px;}
+.key-loc{font-size:12.5px; color:var(--muted);}
+@media print{
+  .key-item{break-inside:avoid; page-break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<header class="banner">
+<div class="banner-inner">
+<div>
+<h1>HIST 270 — History of China — Answer Key (Study Guide 2.0)</h1>
+<p class="sub">Chapter 1 — China in the Bronze Age: The Shang and Zhou (1500–771 BCE)</p>
+</div>
+<div class="tip">
+<strong>PDF TIP (IMPORTANT)</strong>
+<span>When you print / Save as PDF in Chrome or Edge, turn <strong>Background graphics</strong> ON so the banner prints correctly.</span>
+</div>
+</div>
+</header>
+<main class="container">
+<section class="card"><h2>Part I — Model Answer Sketch (Keywords Only)</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Takeaway 1 — Evidence turns “mythic time” into history</h3>
+<div class="small"><strong>Sketch:</strong> archaeology • oracle bones • Anyang verification</div>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Takeaway 2 — Kings ruled by ritual as much as force</h3>
+<div class="small"><strong>Sketch:</strong> oracle bones • ancestors • Di • ritual authority</div>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Takeaway 3 — Zhou legitimation was conditional, not permanent</h3>
+<div class="small"><strong>Sketch:</strong> Mandate of Heaven • virtue • withdrawable legitimacy</div>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Takeaway 4 — Early China was plural, not monolithic</h3>
+<div class="small"><strong>Sketch:</strong> regional diversity • Sanxingdui • Liangzhu • boundaries</div>
+<div class="quote">“Independent political form (not Shang-controlled)”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 6 (“Why Sanxingdui Matters”).</div>
+</div>
+</section>
+<section class="card"><h2>Part II — Why These Are Mistakes (Corrective Notes)</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Shang is not treated as “myth.”</h3>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Mandate of Heaven is conditional (not permanent divine right).</h3>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Oracle bones are governance tools, not just “religion.”</h3>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Bronze is presented as ritual technology.</h3>
+<div class="quote">“Bronze wasn't just for making weapons—it was ritual technology :”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 10 (“Bronze Vessels: Ritual Technology”).</div>
+</div>
+<div class="keyrow">
+<h3>“Barbarians” is a Zhou political/ritual category.</h3>
+<div class="quote">“IMPORTANT: "Barbarians" is a Zhou textual category — a political/ritual boundary marker, NOT objective ethnographic label.”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 13 (“The "Barbarians" on the Periphery”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Sanxingdui shows major cultural diversity (not “primitive”).</h3>
+<div class="quote">“Independent political form (not Shang-controlled)”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 6 (“Why Sanxingdui Matters”).</div>
+</div>
+<div class="keyrow">
+<h3>771 BCE crisis and the capital move are central anchors.</h3>
+<div class="quote">“771 BCE Nomadic invasion — Rong and Di peoples attack Zhou capital”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+</section>
+<section class="card"><h2>Part III — Key Terms: Model Sketch (Keywords Only)</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Oracle bones</h3>
+<div class="small"><strong>Sketch:</strong> divination • early writing • state decisions</div>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Anyang (last Shang capital)</h3>
+<div class="small"><strong>Sketch:</strong> archaeology • last capital • verification anchor</div>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Wang Yirong</h3>
+<div class="small"><strong>Sketch:</strong> 1899 • “dragon bones” • recognized inscriptions</div>
+<div class="quote">“A scholar named Wang Yirong was sick. His doctor prescribed traditional medicine: powdered "dragon bones."”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 2 (“1899: A Startling Discovery”).</div>
+</div>
+<div class="keyrow">
+<h3>Di (high god)</h3>
+<div class="small"><strong>Sketch:</strong> high god • linked to kings/ancestors</div>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Ancestor worship</h3>
+<div class="small"><strong>Sketch:</strong> offerings • lineage • ritual authority</div>
+<div class="quote">“Used in ancestor worship ceremonies”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 10 (“Bronze Vessels: Ritual Technology”).</div>
+</div>
+<div class="keyrow">
+<h3>Bronze ritual vessels</h3>
+<div class="small"><strong>Sketch:</strong> ritual technology • elite power • ceremonies</div>
+<div class="quote">“Bronze wasn't just for making weapons—it was ritual technology :”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 10 (“Bronze Vessels: Ritual Technology”).</div>
+</div>
+<div class="keyrow">
+<h3>Mandate of Heaven (天命)</h3>
+<div class="small"><strong>Sketch:</strong> conditional legitimacy • virtue • withdrawable</div>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Fengjian (封建)</h3>
+<div class="small"><strong>Sketch:</strong> enfeoffment • kin network • obligations</div>
+<div class="quote">“Fengjian = "Feudal-like enfeoffment" Kin-based land grants + ritual/military obligations”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 9 (“Zhou Fengjian (封建) System”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Book of Documents (“Great Declaration”)</h3>
+<div class="small"><strong>Sketch:</strong> Zhou legitimation • Heaven/people logic</div>
+<div class="quote">“) — compiled/transmitted over time; we're reading it as Zhou political theology , not stenography. "Heaven sees as the people see; Heaven hears as the”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 6 (“Primary Source: Book of Documents”).</div>
+</div>
+<div class="keyrow">
+<h3>771 BCE crisis</h3>
+<div class="small"><strong>Sketch:</strong> attack on capital • end of Western Zhou</div>
+<div class="quote">“771 BCE Nomadic invasion — Rong and Di peoples attack Zhou capital”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+<div class="keyrow">
+<h3>Luoyang</h3>
+<div class="small"><strong>Sketch:</strong> eastern capital after 771 BCE</div>
+<div class="quote">“tal was moved near modem Luoyang [law-yahng] in”</div>
+<div class="meta"><strong>Source:</strong> Textbook, Ch. 1 PDF, p. 8 (line with “Luoyang”)..</div>
+</div>
+<div class="keyrow">
+<h3>Sanxingdui (三星堆)</h3>
+<div class="small"><strong>Sketch:</strong> Sichuan • distinct ritual art • diversity</div>
+<div class="quote">“made for the civilization discovered at Sanxingdui”</div>
+<div class="meta"><strong>Source:</strong> Textbook, Ch. 1 PDF, p. 8 (line with “Sanxingdui”)..</div>
+</div>
+<div class="keyrow">
+<h3>Liangzhu culture</h3>
+<div class="small"><strong>Sketch:</strong> jade-centered • southern complex society</div>
+<div class="quote">“Jade working traditions — exquisite jade cong (ritual tubes) and bi (discs)”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 9 (“Earlier Foundations: Liangzhu Culture”).</div>
+</div>
+<div class="keyrow">
+<h3>Loess</h3>
+<div class="small"><strong>Sketch:</strong> windblown soil • northern core region</div>
+<div class="quote">“millet. The dominant soil is loess-fine wind-driv-”</div>
+<div class="meta"><strong>Source:</strong> Textbook, Ch. 1 PDF, p. 2 (line with “loess”)..</div>
+</div>
+<div class="keyrow">
+<h3>Yellow River</h3>
+<div class="small"><strong>Sketch:</strong> northern drainage • flooding risk</div>
+<div class="quote">“The northern part, drained by the Yellow River, is”</div>
+<div class="meta"><strong>Source:</strong> Textbook, Ch. 1 PDF, p. 2 (line with “Yellow River”)..</div>
+</div>
+<div class="keyrow">
+<h3>Chariot technology (hypothesis)</h3>
+<div class="small"><strong>Sketch:</strong> steppe/Central Asia transfer • hypothesis</div>
+<div class="quote">“Chariot technology probably came from Central Asia/steppe”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 14 (“Technology Transfer: The Chariot”).</div>
+</div>
+</section>
+<section class="card"><h2>Part IV — Complete the Argument: Answers</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Part IV — #1 — oracle bones</h3>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #2 — king</h3>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #3 — ritual</h3>
+<div class="quote">“Bronze wasn't just for making weapons—it was ritual technology :”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 10 (“Bronze Vessels: Ritual Technology”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #4 — 1045</h3>
+<div class="quote">“The Shang Dynasty ended around 1045 BCE when the Zhou conquered them.”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 16 (“Why Did the Shang Fall?”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #5 — virtue</h3>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #6 — withdraw</h3>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #7 — people</h3>
+<div class="quote">“) — compiled/transmitted over time; we're reading it as Zhou political theology , not stenography. "Heaven sees as the people see; Heaven hears as the”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 6 (“Primary Source: Book of Documents”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #8 — obligations</h3>
+<div class="quote">“Fengjian = "Feudal-like enfeoffment" Kin-based land grants + ritual/military obligations”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 9 (“Zhou Fengjian (封建) System”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #9 — royal</h3>
+<div class="quote">“The Cracks Appear Over time, the fengjian system began to fail: Geographic expansion weakens royal authority Hard to communicate/enforce commands over long distances Bronze Age”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 12 (“The Cracks Appear”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #10 — capital</h3>
+<div class="quote">“771 BCE Nomadic invasion — Rong and Di peoples attack Zhou capital”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #11 — Luoyang</h3>
+<div class="quote">“Aftermath: Capital moves east to Luoyang”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #12 — boundary</h3>
+<div class="quote">“IMPORTANT: "Barbarians" is a Zhou textual category — a political/ritual boundary marker, NOT objective ethnographic label.”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 13 (“The "Barbarians" on the Periphery”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #13 — writing</h3>
+<div class="quote">“wide!) Bronze "sacred trees" Gold masks and scepters Elephant tusks Jade objects What's Missing No writing system (or none discovered yet) No oracle bones Different”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 4 (“Sanxingdui's Strange Treasures”).</div>
+</div>
+<div class="keyrow">
+<h3>Part IV — #14 — steppe</h3>
+<div class="quote">“Chariot technology probably came from Central Asia/steppe”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 14 (“Technology Transfer: The Chariot”).</div>
+</div>
+</section>
+<section class="card"><h2>Part V — Matching: Correct Pairs</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Part V — A → 1</h3>
+<div class="small"><strong>Sketch:</strong> Wang Yirong → Scholar who noticed “dragon bones” were inscribed</div>
+<div class="quote">“A scholar named Wang Yirong was sick. His doctor prescribed traditional medicine: powdered "dragon bones."”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 2 (“1899: A Startling Discovery”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — B → 2</h3>
+<div class="small"><strong>Sketch:</strong> Anyang → Last Shang capital tied to major excavations</div>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — C → 3</h3>
+<div class="small"><strong>Sketch:</strong> Oracle bones → Divination medium with carved early writing</div>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — D → 4</h3>
+<div class="small"><strong>Sketch:</strong> Di (high god) → High god linked to kings and ancestors</div>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — E → 5</h3>
+<div class="small"><strong>Sketch:</strong> Di Xin → Last Shang king portrayed as a cruel tyrant</div>
+<div class="quote">“The Shang Dynasty ended around 1045 BCE when the Zhou conquered them.”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 16 (“Why Did the Shang Fall?”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — F → 6</h3>
+<div class="small"><strong>Sketch:</strong> Mandate of Heaven → Conditional right to rule based on virtue</div>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part V — G → 7</h3>
+<div class="small"><strong>Sketch:</strong> Book of Documents (“Great Declaration”) → Classic text used to justify Zhou legitimacy</div>
+<div class="quote">“) — compiled/transmitted over time; we're reading it as Zhou political theology , not stenography. "Heaven sees as the people see; Heaven hears as the”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 6 (“Primary Source: Book of Documents”).</div>
+</div>
+<div class="keyrow">
+<h3>Part V — H → 8</h3>
+<div class="small"><strong>Sketch:</strong> Fengjian (封建) → Kin-based land grants with ritual/military duties</div>
+<div class="quote">“Fengjian = "Feudal-like enfeoffment" Kin-based land grants + ritual/military obligations”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 9 (“Zhou Fengjian (封建) System”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part V — I → 9</h3>
+<div class="small"><strong>Sketch:</strong> Luoyang → Eastern capital after 771 BCE crisis</div>
+<div class="quote">“Aftermath: Capital moves east to Luoyang”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+<div class="keyrow">
+<h3>Part V — J → 10</h3>
+<div class="small"><strong>Sketch:</strong> Sanxingdui → Sichuan Bronze Age culture with unique ritual art</div>
+<div class="quote">“Independent political form (not Shang-controlled)”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 6 (“Why Sanxingdui Matters”).</div>
+</div>
+</section>
+<section class="card"><h2>Part VI — Multiple Choice: Correct Letters</h2><div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="keyrow">
+<h3>Part VI — Q1 — A</h3>
+<div class="quote">“"How We Know" Checkpoint The Shang is China's first historically verified dynasty. What does "historically verified" mean? Before Shang: Legendary Xia Dynasty — mentioned in”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 8 (“"How We Know" Checkpoint”).</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q2 — B</h3>
+<div class="quote">“Only the king could perform oracle bone divination”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 9 (“Shang Kings and the Spirit World”).</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q3 — B</h3>
+<div class="quote">“Bronze wasn't just for making weapons—it was ritual technology :”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 1 (Shang), slide 10 (“Bronze Vessels: Ritual Technology”).</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q4 — B</h3>
+<div class="quote">“The Mandate of Heaven = Conditional authority based on virtue”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 3 (“The Mandate of Heaven (天命)”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q5 — B</h3>
+<div class="quote">“) — compiled/transmitted over time; we're reading it as Zhou political theology , not stenography. "Heaven sees as the people see; Heaven hears as the”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 6 (“Primary Source: Book of Documents”).</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q6 — B</h3>
+<div class="quote">“Fengjian = "Feudal-like enfeoffment" Kin-based land grants + ritual/military obligations”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 9 (“Zhou Fengjian (封建) System”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q7 — B</h3>
+<div class="quote">“771 BCE Nomadic invasion — Rong and Di peoples attack Zhou capital”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 14 (“771 BCE: The Crisis”), timeline.</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q8 — B</h3>
+<div class="quote">“Independent political form (not Shang-controlled)”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 6 (“Why Sanxingdui Matters”).</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q9 — B</h3>
+<div class="quote">“IMPORTANT: "Barbarians" is a Zhou textual category — a political/ritual boundary marker, NOT objective ethnographic label.”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 2 (Zhou), slide 13 (“The "Barbarians" on the Periphery”), highlight box.</div>
+</div>
+<div class="keyrow">
+<h3>Part VI — Q10 — B</h3>
+<div class="quote">“Chariot technology probably came from Central Asia/steppe”</div>
+<div class="meta"><strong>Source:</strong> Lecture Deck 3 (Regional Diversity), slide 14 (“Technology Transfer: The Chariot”).</div>
+</div>
+</section>
+<section class="card">
+<h2>Textbook Anchors (For Grading &amp; Verification)</h2>
+<div class="kicker">Each answer includes a short quote (≤25 words) + a locator.</div>
+<div class="key-item">
+<div class="key-label">Textbook Anchor — Taxes</div>
+<div class="key-answer"><strong>Answer:</strong> poll tax (120 cash) as a main levy</div>
+<div class="key-proof">
+<div class="key-quote">“The main tax was a poll tax of 120 cash (coins) on adults (less for children).”</div>
+<div class="key-loc">Textbook, Ch. 3 PDF, p. 8</div>
+</div>
+</div><div class="key-item">
+<div class="key-label">Textbook Anchor — Social Base</div>
+<div class="key-answer"><strong>Answer:</strong> Han population largely farmers</div>
+<div class="key-proof">
+<div class="key-quote">“The bulk of the population in Han times (and even the twentieth century) was made up of farmers”</div>
+<div class="key-loc">Textbook, Ch. 3 PDF, p. 14</div>
+</div>
+</div>
+</section>
+<div class="footer">Print, write on this, bring ONLY this study guide. No extra paper.</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chapter 3 — Qin &amp; Han: Founding the Bureaucratic Empire (256 BCE–200 CE) — Study Guide</title>
+<style>:root{
+  --paper:#f3efe6;
+  --ink:#2a2a26;
+  --muted:#5a5a52;
+  --card:#ffffff;
+  --border:#d7d1c3;
+  --accent:#8a2d3c;
+  --accent2:#5a2f69;
+  --shadow: 0 10px 26px rgba(0,0,0,.08);
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.35;
+}
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 18px 28px;
+}
+.banner{
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  color: #f6f2ea;
+  padding: 20px 18px 18px;
+  border-bottom: 3px solid rgba(255,255,255,.2);
+}
+.banner-inner{
+  max-width: 980px;
+  margin: 0 auto;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.banner h1{
+  margin:0 0 6px;
+  font-size: 22px;
+  letter-spacing:.2px;
+}
+.banner .sub{
+  margin:0;
+  opacity:.95;
+  font-size: 14px;
+}
+.tip{
+  background:#111;
+  color:#fff;
+  padding:10px 12px;
+  border-radius:10px;
+  max-width: 360px;
+  border: 2px solid rgba(255,255,255,.25);
+}
+.tip strong{display:block; font-size: 13px; letter-spacing:.4px;}
+.tip span{display:block; font-size: 12.5px; opacity:.95; margin-top:2px;}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 14px;
+  margin: 14px 0;
+}
+.card h2{
+  margin:0 0 10px;
+  font-size: 18px;
+  color: #1f1f1b;
+}
+.kicker{
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top:-4px;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align:center;
+}
+/* Part I */
+.takeaway{
+  border:1px dashed rgba(0,0,0,.16);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  margin: 10px 0;
+}
+.takeaway h3{
+  margin:0 0 6px;
+  font-size: 15.5px;
+  color:#1f1f1b;
+}
+.takeaway ul{margin: 0; padding-left: 18px;}
+.takeaway li{margin: 5px 0;}
+/* Checkboxes */
+.check-grid{display:grid; grid-template-columns: 1fr; gap:10px;}
+.check-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size: 14px;
+}
+.box{
+  width: 16px; height: 16px;
+  border: 2px solid #3a3a34;
+  border-radius: 3px;
+  margin-top:2px;
+  flex:0 0 auto;
+  background:#fff;
+}
+/* Key Terms table */
+.term-table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.term-table td{vertical-align:top; width:50%;}
+.term-box{
+  border:1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  background: #fffdf8;
+}
+.term-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:8px;
+}
+.term-title{font-weight:700; font-size: 14.5px;}
+.tag{
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.14);
+  color:#2b2b26;
+  background:#f2efe6;
+  white-space:nowrap;
+}
+.term-section{margin-top:10px;}
+.term-label{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing:.2px;
+}
+.write-area{border:1px solid rgba(0,0,0,.16); border-radius:10px; padding: 8px 10px; background:#fff;}
+.write-line{
+  height: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.28);
+}
+.write-line:last-child{border-bottom:none;}
+/* Fill in the blank */
+.fill-wrap{display:flex; flex-direction:column; gap:10px;}
+.fill-item{display:flex; gap:10px; align-items:flex-start; font-size: 14px;}
+.fill-num{width: 28px; font-weight:700;}
+.blank{
+  display:inline-block;
+  border-bottom: 2px solid #333;
+  transform: translateY(-1px);
+  margin: 0 .25em;
+}
+/* Matching table */
+.match-table{
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.match-table th, .match-table td{
+  border:1px solid var(--border);
+  padding: 10px 10px;
+  vertical-align:top;
+}
+.match-table th{
+  background:#f7f3ea;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing:.6px;
+}
+.match-col ol{margin:0; padding-left: 18px;}
+.match-col li{margin: 6px 0;}
+/* Multiple choice */
+.mc-q{border:1px solid rgba(0,0,0,.12); border-radius: 12px; padding: 12px 12px 10px; margin: 10px 0; background:#fffdf8;}
+.mc-stem{font-size:14px; margin-bottom: 8px;}
+.mc-num{font-weight:700;}
+.mc-opt{display:flex; gap:10px; margin: 6px 0; align-items:flex-start;}
+.mc-letter{font-weight:700; width: 20px;}
+/* -------- Print -------- */
+@page{
+  size: Letter;
+  margin: 0.75in;
+}
+@media print{
+  body{background:#fff;}
+  .banner{border-bottom:none;}
+  .card{box-shadow:none;}
+  .container{padding: 0;}
+  h1,h2,h3{break-after:avoid-page;}
+  .card, .takeaway, .term-box, .mc-q{break-inside: avoid; page-break-inside: avoid;}
+  .term-table{border-spacing: 8px;}
+  .tip{border:2px solid #000;}
+  a{color:inherit; text-decoration:none;}
+}</style>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-inner">
+      <div>
+        <h1>HIST 270 — History of China — Study Guide 2.0</h1>
+        <p class="sub">Chapter 3 — Qin &amp; Han: Founding the Bureaucratic Empire (256 BCE–200 CE)</p>
+      </div>
+      <div class="tip">
+        <strong>PDF TIP (IMPORTANT)</strong>
+        <span>When you print / Save as PDF in Chrome or Edge, turn <strong>Background graphics</strong> ON so the banner prints correctly.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Part I — The 4 Big Takeaways (Short Answers — No Paragraphs)</h2>
+      <div class="kicker">Write short phrases. No paragraphs. Keep it tight.</div>
+      
+      <div class="takeaway">
+        <h3>Takeaway 1 — How Qin built empire-fast</h3>
+        <ul>
+          <li>This period shows that power can centralize rapidly.</li>
+          <li>This matters because laws and punishments reshape behavior.</li>
+          <li>This matters because standardization enables control at scale.</li>
+        </ul>
+      </div>
+      
+      <div class="takeaway">
+        <h3>Takeaway 2 — How Han kept the machine, changed the feel</h3>
+        <ul>
+          <li>This period shows learning from Qin’s failures matters.</li>
+          <li>This matters because burdens on peasants shape stability.</li>
+          <li>This matters because ideology can legitimize bureaucracy.</li>
+        </ul>
+      </div>
+      
+      <div class="takeaway">
+        <h3>Takeaway 3 — Frontiers create policy, war, and trade</h3>
+        <ul>
+          <li>This period shows nomads required different strategies.</li>
+          <li>This matters because diplomacy bought time for recovery.</li>
+          <li>This matters because expansion opened long-distance networks.</li>
+        </ul>
+      </div>
+      
+      <div class="takeaway">
+        <h3>Takeaway 4 — Why empires fracture from inside</h3>
+        <ul>
+          <li>This period shows inequality erodes the tax base.</li>
+          <li>This matters because court factions distort decision-making.</li>
+          <li>This matters because rebellion can empower warlords.</li>
+        </ul>
+      </div>
+      
+    </section>
+
+    <section class="card">
+      <h2>Part II — Common Mistakes to Avoid</h2>
+      <div class="kicker">Check each misconception you will actively avoid on the exam.</div>
+      <div class="check-grid">
+        <label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Assuming “Legalism” means “no morality at all.”</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Thinking standardization was only symbolic, not administrative.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Believing the book burning erased all classics permanently.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Imagining the Great Wall “solved” the nomad problem.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Treating heqin as “friendship,” not tribute-like diplomacy.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Assuming Han abandoned Qin-style centralized institutions.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Thinking Wang Mang’s reforms failed only because he was evil.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Assuming eunuchs were powerless servants with no influence.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Believing the Yellow Turbans ended Han by themselves.</span>
+    </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Part III — Key Terms (Write‑In Boxes)</h2>
+      <div class="kicker">Each term gets its own box. Definition + “This matters because…”</div>
+
+      <table class="term-table" role="presentation">
+        <tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Legalism (法家 Fǎjiā)</div>
+        <span class="tag">Lecture Emphasis</span>
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Li Si (李斯)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Qin Shihuangdi / First Emperor (秦始皇帝)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Standardization (writing/weights/measures/axles/currency)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Burning of Books (213 BCE)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Collective Responsibility (mutual-responsibility units)</div>
+        <span class="tag">Lecture Emphasis</span>
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Xiongnu (匈奴)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Great Wall (Qin-era northern defenses)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Emperor Gaozu / Liu Bang (r. 202–195 BCE)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">“Resting with the people” (與民休息)</div>
+        <span class="tag">Lecture Emphasis</span>
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Emperor Wu / Wudi (r. 141–87 BCE)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Dong Zhongshu (董仲舒)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Imperial University / Taixue (太學, 124 BCE)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Wang Mang &amp; the Xin Dynasty (9–23 CE)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Zhang Qian (張騫) and western missions</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Silk Road (network of routes)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Part IV — Complete the Argument (Fill in the Blank)</h2>
+      <div class="kicker">Blanks are short (1–4 words). Focus on causal logic, not trivia.</div>
+      
+      <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+        <h3 style="margin-bottom:8px;">Qin: Building an empire-state</h3>
+        <div class="fill-wrap">
+          <div class="fill-item">
+      <div class="fill-num">1.</div>
+      <div class="fill-text">Qin made rule workable by standardizing the <span class="blank" style="width:12em;"></span> system.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">2.</div>
+      <div class="fill-text">Uniform <span class="blank" style="width:10em;"></span> and measures helped taxation and trade.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">3.</div>
+      <div class="fill-text">In <span class="blank" style="width:6em;"></span> BCE, Li Si urged burning books praising old feudal ways.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">4.</div>
+      <div class="fill-text">Qin deterred crime through <span class="blank" style="width:12em;"></span> responsibility beyond individuals.</div>
+    </div>
+        </div>
+      </div>
+      
+      <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+        <h3 style="margin-bottom:8px;">Han: Learning from Qin’s failures</h3>
+        <div class="fill-wrap">
+          <div class="fill-item">
+      <div class="fill-num">5.</div>
+      <div class="fill-text">Han lowered the land tax to <span class="blank" style="width:8em;"></span> of the harvest.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">6.</div>
+      <div class="fill-text">In <span class="blank" style="width:6em;"></span> BCE, Emperor Wu founded the Imperial University to train officials.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">7.</div>
+      <div class="fill-text">Officials were selected through mastery of the <span class="blank" style="width:6em;"></span> Classics.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">8.</div>
+      <div class="fill-text">Dong Zhongshu argued non-Confucian schools should be <span class="blank" style="width:12em;"></span>.</div>
+    </div>
+        </div>
+      </div>
+      
+      <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+        <h3 style="margin-bottom:8px;">Frontier pressure → expansion → Silk Road</h3>
+        <div class="fill-wrap">
+          <div class="fill-item">
+      <div class="fill-num">9.</div>
+      <div class="fill-text">After Baideng, Han used <span class="blank" style="width:8em;"></span> diplomacy: princesses + annual “gifts.”</div>
+    </div><div class="fill-item">
+      <div class="fill-num">10.</div>
+      <div class="fill-text">Emperor Wu sent Zhang Qian west in <span class="blank" style="width:6em;"></span> BCE to seek the Yuezhi.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">11.</div>
+      <div class="fill-text">Han conquered Ferghana in <span class="blank" style="width:10em;"></span> BCE for elite horses.</div>
+    </div>
+        </div>
+      </div>
+      
+      <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+        <h3 style="margin-bottom:8px;">Decline: why Later Han unraveled</h3>
+        <div class="fill-wrap">
+          <div class="fill-item">
+      <div class="fill-num">12.</div>
+      <div class="fill-text">The Yellow Turban uprising began in <span class="blank" style="width:6em;"></span> CE and made the court rely on regional <span class="blank" style="width:10em;"></span>.</div>
+    </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="card">
+      <h2>Part V — Matching: Names, Titles, and Who They Were</h2>
+      <div class="kicker">Match the left column (A–J) to the right column (1–10).</div>
+
+      <table class="match-table" role="presentation">
+        <thead>
+          <tr>
+            <th style="width:48%;">A–J — Terms</th>
+            <th style="width:52%;">1–10 — Descriptions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="match-col">
+              <ol type="A">
+                <li>Li Si (李斯)</li><li>Qin Shihuangdi (First Emperor)</li><li>Meng Tian (蒙恬)</li><li>Xiongnu chanyu Maodun</li><li>Heqin (和親)</li><li>Liu Bang / Emperor Gaozu</li><li>Dong Zhongshu (董仲舒)</li><li>Imperial University (太學)</li><li>Wang Mang (王莽) / Xin Dynasty</li><li>Zhang Qian (張騫)</li>
+              </ol>
+            </td>
+            <td class="match-col">
+              <ol>
+                <li>Legalist chancellor; promoted standardization and book burning</li><li>Created a new imperial title and centralized rule</li><li>Qin general who campaigned north and built defenses (215 BCE)</li><li>Xiongnu leader linked to the Baideng siege strategy</li><li>“Peace and kinship” diplomacy: marriage + gifts/tribute</li><li>Founder of Han; reduced burdens while keeping centralized government</li><li>Advised Emperor Wu; pushed Confucian orthodoxy</li><li>State school founded under Wu to train officials (124 BCE)</li><li>Consort-family regent who declared a “New” dynasty (9–23 CE)</li><li>Envoy whose reports opened routes to Central Asia (139 BCE mission)</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Part VI — Multiple Choice (Quiz Prep)</h2>
+      <div class="kicker">Circle ONE letter per question. Distractors are designed to mimic common mistakes.</div>
+      <div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">1.</span> Legalism in the Qin-Han context is best described as…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">rule by virtuous example and ritual propriety</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">clear laws with harsh, automatic punishments</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">government by merchants through free markets</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">avoidance of state power and non-action</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">2.</span> Why did Qin standardize axle widths?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">To increase cavalry speed on the frontier</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">So carts fit the same road ruts</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">To prevent currency counterfeiting</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">To make the writing system uniform</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">3.</span> According to the sources, in 213 BCE Li Si persuaded the Qin ruler to…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">abolish commanderies and restore feudal lords</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">burn books praising old feudal ways</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">end frontier construction and open borders</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">promote Confucian classics as state orthodoxy</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">4.</span> The heqin policy involved…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">military conquest of the Ordos region</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">marriage alliances plus annual “gifts” to the Xiongnu</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">a ban on cross-border trade markets</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">selecting officials by the Five Classics</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">5.</span> Early Han reforms are captured by the phrase “resting with the people” because they…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">increased corvée demands to build palaces</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">lowered taxes and reduced labor burdens</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">ended the centralized state apparatus entirely</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">required all farmers to become soldiers</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">6.</span> Under Emperor Wu, official education and selection centered on…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">the Book of Changes only</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">the Five Classics</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Legalist handbooks discovered in 1975</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">merchant guild apprenticeships</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">7.</span> Wang Mang’s reforms failed primarily because…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">they helped peasants too quickly, angering nobody</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">they disrupted the economy and met elite resistance, amid disaster</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">he refused to use any Confucian ideals at all</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">the Xiongnu conquered Chang’an in 9 CE</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">8.</span> Zhang Qian’s mission was originally meant to…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">convert Rome to Confucianism</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">find the Yuezhi to ally against the Xiongnu</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">map sea routes to India</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">negotiate Qin surrender to Han</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">9.</span> The Han conquest of Ferghana (104–102 BCE) was motivated by the desire for…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">iron deposits for weaponry</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">elite horses</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">silk workshops</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">paper-making techniques</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">10.</span> A major political consequence of the Yellow Turban Rebellion was…</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">the end of court factions and eunuch influence</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">greater reliance on regional warlords with private armies</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">immediate restoration of Western Han</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">permanent peace with the Xiongnu through heqin</span></div></div>
+    </div>
+    </section>
+
+    <div class="footer">
+      Print, write on this, bring ONLY this study guide. No extra paper.
+    </div>
+
+  </main>
+</body>
+</html>

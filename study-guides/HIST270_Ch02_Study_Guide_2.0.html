@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HIST 270 — History of China — Chapter 2 — Philosophers &amp; the Warring States (770–256 BCE) — Study Guide</title>
+<style>:root{
+  --paper:#f3efe6;
+  --ink:#2a2a26;
+  --muted:#5a5a52;
+  --card:#ffffff;
+  --border:#d7d1c3;
+  --accent:#8a2d3c;
+  --accent2:#5a2f69;
+  --shadow: 0 10px 26px rgba(0,0,0,.08);
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.35;
+}
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 18px 28px;
+}
+.banner{
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  color: #f6f2ea;
+  padding: 20px 18px 18px;
+  border-bottom: 3px solid rgba(255,255,255,.2);
+}
+.banner-inner{
+  max-width: 980px;
+  margin: 0 auto;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.banner h1{
+  margin:0 0 6px;
+  font-size: 22px;
+  letter-spacing:.2px;
+}
+.banner .sub{
+  margin:0;
+  opacity:.95;
+  font-size: 14px;
+}
+.tip{
+  background:#111;
+  color:#fff;
+  padding:10px 12px;
+  border-radius:10px;
+  max-width: 360px;
+  border: 2px solid rgba(255,255,255,.25);
+}
+.tip strong{display:block; font-size: 13px; letter-spacing:.4px;}
+.tip span{display:block; font-size: 12.5px; opacity:.95; margin-top:2px;}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 14px;
+  margin: 14px 0;
+}
+.card h2{
+  margin:0 0 10px;
+  font-size: 18px;
+  color: #1f1f1b;
+}
+.kicker{
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top:-4px;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align:center;
+}
+/* Part I */
+.takeaway{
+  border:1px dashed rgba(0,0,0,.16);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  margin: 10px 0;
+}
+.takeaway h3{
+  margin:0 0 6px;
+  font-size: 15.5px;
+  color:#1f1f1b;
+}
+.takeaway ul{margin: 0; padding-left: 18px;}
+.takeaway li{margin: 5px 0;}
+/* Checkboxes */
+.check-grid{display:grid; grid-template-columns: 1fr; gap:10px;}
+.check-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size: 14px;
+}
+.box{
+  width: 16px; height: 16px;
+  border: 2px solid #3a3a34;
+  border-radius: 3px;
+  margin-top:2px;
+  flex:0 0 auto;
+  background:#fff;
+}
+/* Key Terms table */
+.term-table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.term-table td{vertical-align:top; width:50%;}
+.term-box{
+  border:1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  background: #fffdf8;
+}
+.term-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:8px;
+}
+.term-title{font-weight:700; font-size: 14.5px;}
+.tag{
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.14);
+  color:#2b2b26;
+  background:#f2efe6;
+  white-space:nowrap;
+}
+.term-section{margin-top:10px;}
+.term-label{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing:.2px;
+}
+.write-area{border:1px solid rgba(0,0,0,.16); border-radius:10px; padding: 8px 10px; background:#fff;}
+.write-line{
+  height: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.28);
+}
+.write-line:last-child{border-bottom:none;}
+/* Fill in the blank */
+.fill-wrap{display:flex; flex-direction:column; gap:10px;}
+.fill-item{display:flex; gap:10px; align-items:flex-start; font-size: 14px;}
+.fill-num{width: 28px; font-weight:700;}
+.blank{
+  display:inline-block;
+  border-bottom: 2px solid #333;
+  transform: translateY(-1px);
+  margin: 0 .25em;
+}
+/* Matching table */
+.match-table{
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.match-table th, .match-table td{
+  border:1px solid var(--border);
+  padding: 10px 10px;
+  vertical-align:top;
+}
+.match-table th{
+  background:#f7f3ea;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing:.6px;
+}
+.match-col ol{margin:0; padding-left: 18px;}
+.match-col li{margin: 6px 0;}
+.match-line{
+  display:inline-block;
+  width: 54px;
+  border-bottom: 2px solid #2f2e29;
+  height: 1.05em;
+  margin-left: 8px;
+  vertical-align: baseline;
+}
+/* Multiple choice */
+.mc-q{border:1px solid rgba(0,0,0,.12); border-radius: 12px; padding: 12px 12px 10px; margin: 10px 0; background:#fffdf8;}
+.mc-stem{font-size:14px; margin-bottom: 8px;}
+.mc-num{font-weight:700;}
+.mc-opt{display:flex; gap:10px; margin: 6px 0; align-items:flex-start;}
+.mc-letter{font-weight:700; width: 20px;}
+/* -------- Print -------- */
+@page{
+  size: Letter;
+  margin: 0.75in;
+}
+@media print{
+  body{background:#fff;}
+  .banner{border-bottom:none;}
+  .card{box-shadow:none;}
+  .container{padding: 0;}
+  h1,h2,h3{break-after:avoid-page;}
+  .card, .takeaway, .term-box, .mc-q{break-inside: avoid; page-break-inside: avoid;}
+  .term-table{border-spacing: 8px;}
+  .tip{border:2px solid #000;}
+  a{color:inherit; text-decoration:none;}
+}</style>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-inner">
+      <div>
+        <h1>HIST 270 — History of China — Study Guide 2.0</h1>
+        <p class="sub">Chapter 2 — Philosophers &amp; the Warring States (770–256 BCE)</p>
+      </div>
+      <div class="tip">
+        <strong>PDF TIP (IMPORTANT)</strong>
+        <span>When you print / Save as PDF in Chrome or Edge, turn <strong>Background graphics</strong> ON so the banner prints correctly.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Part I — The 4 Big Takeaways (Short Answers — No Paragraphs)</h2>
+      <div class="kicker">Keep these four in your head while you do Parts II–VI. If you can’t connect an answer to a takeaway, you’re probably memorizing trivia.</div>
+      
+    <div class="takeaway">
+      <h3>1) Collapse → competition → a crisis of order <span class="tag">Lecture Emphasis</span></h3>
+      <ul>
+        <li>When Zhou authority collapses, violence spreads.</li><li>States compete without a shared “referee.”</li><li>Thinkers sell plans to restore order.</li>
+      </ul>
+    </div>
+    
+    <div class="takeaway">
+      <h3>2) Warfare changes everything: armies, taxes, administration <span class="tag">Lecture Emphasis</span></h3>
+      <ul>
+        <li>War expands beyond elite chariots.</li><li>States mobilize populations and resources.</li><li>Government grows more centralized and systematic.</li>
+      </ul>
+    </div>
+    
+    <div class="takeaway">
+      <h3>3) The “Hundred Schools” are competing answers, not trivia <span class="tag">Lecture Emphasis</span></h3>
+      <ul>
+        <li>Confucians: virtue and ritual reform society.</li><li>Mohists: impartial care, practical utility, merit.</li><li>Daoists/Legalists: radical alternatives to “try harder.”</li>
+      </ul>
+    </div>
+    
+    <div class="takeaway">
+      <h3>4) Legacy: Qin wins with Legalism; debates outlive Qin <span class="tag">Lecture Emphasis</span></h3>
+      <ul>
+        <li>Legalist tools help Qin unify.</li><li>Confucian ideals shape later legitimacy.</li><li>These frameworks remain political templates.</li>
+      </ul>
+    </div>
+    
+    </section>
+
+    <section class="card">
+      <h2>Part II — Common Mistakes to Avoid</h2>
+      <div class="kicker">Check each misconception you will actively avoid on the exam.</div>
+      <div class="check-grid">
+        <label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Mixing up the periods: Spring and Autumn vs. Warring States .</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Thinking “Hundred Schools” means exactly one hundred schools.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Treating wu-wei as laziness (it’s “without forcing”).</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Assuming yin–yang means “good vs. evil.”</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Confusing Legalism with modern “rule of law” (different concept).</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Flattening Confucianism into “ritual = religion only” (it’s broader).</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Saying Mencius and Xunzi agree on human nature (they don’t).</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Assuming Qin’s victory proves Legalism was morally admired.</span>
+    </label><label class="check-item">
+      <span class="box" aria-hidden="true"></span>
+      <span class="check-text">Forgetting the “advisor marketplace” role of philosophers and shi .</span>
+    </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Part III — Key Terms (Write‑In Boxes)</h2>
+      <div class="kicker">Each term gets its own box. Definition + “This matters because…”</div>
+
+      <table class="term-table" role="presentation">
+        <tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Spring and Autumn Period</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Warring States Period</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">shi (士)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">ren (仁)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">li (禮)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">junzi (君子)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Jian ai (兼愛) / Universal Love</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Mencius (孟子)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Xunzi (荀子)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Dao (道)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr><tr><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">wu-wei (無為)</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td><td><div class="term-box">
+      <div class="term-head">
+        <div class="term-title">Legalism</div>
+        
+      </div>
+      <div class="term-section">
+        <div class="term-label">Definition</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+      <div class="term-section">
+        <div class="term-label">This matters because…</div>
+        <div class="write-area"><div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div>
+<div class="write-line"></div></div>
+      </div>
+    </div></td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Part IV — Complete the Argument (Fill in the Blank)</h2>
+      <div class="kicker">Blanks are short (1–4 words). Focus on causal logic, not trivia.</div>
+      
+    <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+      <h3 style="margin-bottom:8px;">A) Political Breakdown &amp; the Multistate System <span class="tag">Lecture Emphasis</span></h3>
+      <div class="fill-wrap">
+        <div class="fill-item">
+      <div class="fill-num">1.</div>
+      <div class="fill-text">In <span class="blank short"></span> BCE, the Zhou king is dead, triggering a crisis of authority.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">2.</div>
+      <div class="fill-text">The earlier era is called the <span class="blank"></span> and Autumn Period (770–479 BCE).</div>
+    </div><div class="fill-item">
+      <div class="fill-num">3.</div>
+      <div class="fill-text">In the Warring States Period, only <span class="blank tiny"></span> major states remain.</div>
+    </div>
+      </div>
+    </div>
+    
+    <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+      <h3 style="margin-bottom:8px;">B) Warfare → State-Building Pressures <span class="tag">Lecture Emphasis</span></h3>
+      <div class="fill-wrap">
+        <div class="fill-item">
+      <div class="fill-num">4.</div>
+      <div class="fill-text">Warfare expands into more <span class="blank short"></span> conflict that mobilizes resources and people.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">5.</div>
+      <div class="fill-text">States rely on mass <span class="blank short"></span> soldiers rather than elite chariots.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">6.</div>
+      <div class="fill-text">To compete, rulers strengthen <span class="blank"></span> and administrative control.</div>
+    </div>
+      </div>
+    </div>
+    
+    <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+      <h3 style="margin-bottom:8px;">C) Advisors in a Marketplace of Ideas <span class="tag">Lecture Emphasis</span></h3>
+      <div class="fill-wrap">
+        <div class="fill-item">
+      <div class="fill-num">7.</div>
+      <div class="fill-text">The itinerant advisor class is the <span class="blank short"></span> (educated “job applicants”).</div>
+    </div><div class="fill-item">
+      <div class="fill-num">8.</div>
+      <div class="fill-text">“Different philosophies = different <span class="blank short"></span> applications.”</div>
+    </div>
+      </div>
+    </div>
+    
+    <div class="takeaway" style="border-style:solid; border-color: rgba(0,0,0,.10);">
+      <h3 style="margin-bottom:8px;">D) Competing Solutions to Disorder (Compare!) <span class="tag">Lecture Emphasis</span></h3>
+      <div class="fill-wrap">
+        <div class="fill-item">
+      <div class="fill-num">9.</div>
+      <div class="fill-text">Confucius argues we rebuild through <span class="blank short"></span> (inner virtue) and <span class="blank short"></span> (proper conduct).</div>
+    </div><div class="fill-item">
+      <div class="fill-num">10.</div>
+      <div class="fill-text">Mozi’s most radical ethical claim is <span class="blank"></span> love (impartial care for all).</div>
+    </div><div class="fill-item">
+      <div class="fill-num">11.</div>
+      <div class="fill-text">Daoists recommend <span class="blank short"></span>-wei: acting “without forcing.”</div>
+    </div><div class="fill-item">
+      <div class="fill-num">12.</div>
+      <div class="fill-text">Legalists emphasize the ruler’s <span class="blank short"></span> plus rewards and punishments to produce obedience.</div>
+    </div><div class="fill-item">
+      <div class="fill-num">13.</div>
+      <div class="fill-text">In <span class="blank short"></span> BCE, Qin conquers and unifies the other states.</div>
+    </div>
+      </div>
+    </div>
+    
+    </section>
+
+    <section class="card">
+      <h2>Part V — Matching: Names, Titles, and Who They Were</h2>
+      <div class="kicker">Match the left column (A–J) to the right column (1–10).</div>
+
+      <table class="match-table" role="presentation">
+        <thead>
+          <tr>
+            <th style="width:48%;">A–J — Terms</th>
+            <th style="width:52%;">1–10 — Descriptions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="match-col">
+              <ol type="A">
+                <li>Confucius (孔子)</li><li>Mozi (墨子)</li><li>Mencius (孟子)</li><li>Xunzi (荀子)</li><li>Laozi (老子)</li><li>Zhuangzi (莊子)</li><li>Han Feizi (韓非子)</li><li>Sunzi (孫子)</li><li>Legalism</li><li>shi (士)</li>
+              </ol>
+            </td>
+            <td class="match-col">
+              <ol>
+                <li>Argues the solution is moral cultivation through ren and li; governance through virtue.</li><li>Critic of Confucian hierarchy; promotes jian ai (universal love) and practical reforms.</li><li>Defends Confucianism by claiming human nature begins good; virtue must be nurtured.</li><li>Claims human nature is fundamentally bad; ritual discipline corrects it; links toward Legalism.</li><li>Associated with the Daodejing; a probably legendary Daoist figure.</li><li>Text filled with parables that critique striving and conventional values (Daoist).</li><li>Major Legalist thinker; emphasizes law and state power; tied to Qin’s methods.</li><li>Author associated with The Art of War; strategy and victory logic in warfare.</li><li>Statecraft focused on ruler’s law, rewards, punishments, and centralized power.</li><li>Mobile educated advisor class: practical “job applicants” to states.</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Part VI — Multiple Choice (Quiz Prep)</h2>
+      <div class="kicker">Circle ONE letter per question. Distractors are designed to mirror “Common Mistakes.”</div>
+      <div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">1.</span> In the lecture framing, what core problem appears after 771 BCE?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Foreign invasion ends Chinese civilization</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">The Zhou king dies; order collapses</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Peasants abolish aristocracy instantly</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Buddhism replaces ritual authority</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">2.</span> Which statement best matches the lecture’s description of the shift into the Warring States system?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Hundreds of states remain permanently equal</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Only seven major states remain</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">One empire already exists under Zhou</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">States stop fighting due to shared ritual</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">3.</span> In Lecture 2, why are the “Hundred Schools” described as practical?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">They write only poetry, not politics</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">They are “job applicants” selling solutions</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">They oppose all government and order</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">They agree on one shared program</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">4.</span> Which pair is identified as Confucius’s “solution” for repairing society?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Yin and yang</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Ren and li</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Crossbows and conscription</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Universal love and anti-ritual</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">5.</span> Which statement best describes Mozi’s most radical moral proposal in the lecture deck?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Only family deserves moral concern</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Love must be strictly hierarchical</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Universal (impartial) love for all</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Ritual is the only path to virtue</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">6.</span> What is the core disagreement between Mencius and Xunzi (as presented in Lecture 2)?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Whether war exists at all</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Whether human nature begins good or bad</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Whether Zhou kings were real</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Whether philosophy should be written down</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">7.</span> In Lecture 3, wu-wei (無為) is best described as:</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Doing nothing and refusing all action</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Effortless action without forcing</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Obeying written law under punishment</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Always following family hierarchy</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">8.</span> According to Lecture 3, which statement best captures the “School of Law” clarification?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">It is identical to modern constitutionalism</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">It means ruler’s law as a tool of power</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">It rejects rewards and punishments entirely</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">It bans bureaucracy and administration</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">9.</span> In the Yin–Yang slide, what is explicitly stated about yin–yang?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">It is good vs. evil</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">It is shared background cosmology</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">It belongs only to Legalism</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">It replaces all ethics and politics</span></div></div>
+    </div><div class="mc-q">
+      <div class="mc-stem"><span class="mc-num">10.</span> In the textbook’s Chu case study, which statement is directly supported?</div>
+      <div class="mc-opts"><div class="mc-opt"><span class="mc-letter">A.</span><span class="mc-text">Chu was the dominant southern state</span></div>
+<div class="mc-opt"><span class="mc-letter">B.</span><span class="mc-text">Chu never expanded beyond one valley</span></div>
+<div class="mc-opt"><span class="mc-letter">C.</span><span class="mc-text">Chu rejected all material culture</span></div>
+<div class="mc-opt"><span class="mc-letter">D.</span><span class="mc-text">Chu was one of the seven only in the north</span></div></div>
+    </div>
+    </section>
+
+    <div class="footer">
+      Print, write on this, bring ONLY this study guide. No extra paper.
+    </div>
+
+  </main>
+</body>
+</html>

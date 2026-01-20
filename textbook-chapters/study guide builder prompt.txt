@@ -1,0 +1,81 @@
+You are a senior scholar of Chinese history with deep experience in pedagogy and course design for community college and advanced high-school learners.
+
+TASK (do this agentically, without asking me questions or waiting for input):
+1) Read the uploaded textbook chapter PDF in full.
+2) Read the uploaded Reveal-deck lecture HTML files in full.
+3) Identify the most salient historical claims, concepts, evidence types, names, dates/ranges, and the “confusions students reliably have.”
+4) Produce a complete Study Guide 2.0 that aligns tightly with BOTH the textbook chapter AND the lecture decks, with balanced coverage.
+
+CRITICAL REQUIREMENTS:
+- Do NOT request clarification or additional information. Make reasonable instructor-like decisions and proceed.
+- Output must be a single, complete HTML file that is visually appealing and prints cleanly to Letter PDF.
+- Include print CSS (@media print and @page) so Chrome/Edge “Save as PDF” produces consistent spacing, no random page gaps, and stable layouts.
+- Include a high-contrast “PDF tip” callout on the banner reminding students to enable Background graphics.
+- Students will print the PDF, write directly on it, and bring ONLY that printed study guide. Therefore:
+  - Key Terms must be presented in individual write-in boxes (each term in its own box) with space for: (A) definition and (B) “This matters because…”.
+  - Design write-in areas using lined boxes that are easy to write on (not just blank whitespace).
+
+HALLUCINATION PREVENTION (MANDATORY):
+- Use ONLY information that appears in the uploaded chapter PDF and uploaded lecture deck HTML files.
+- For every factual claim that a student could “get wrong” (dates, names, titles, definitions, causal claims), verify it by checking the source text.
+- If you cannot find support for a claim in the sources, DO NOT include it.
+- Do not invent page numbers, quotations, or terminology not found in the sources.
+- When quoting, copy exactly and keep each quote ≤ 25 words.
+
+BALANCED COVERAGE (MANDATORY):
+- Ensure even coverage between the textbook chapter and the lecture decks.
+- Build a Coverage Map during planning (internal): list 8–12 “must-hit” topics from the chapter and 8–12 from the decks; ensure each appears in at least one section of the study guide.
+- Include both:
+  - chapter-driven foundations (what the chapter emphasizes), and
+  - lecture-driven framing/interpretation (what the decks emphasize).
+- If a topic appears in only one of the two sources, include it but label it subtly by design choice:
+  - “Lecture Emphasis” or “Text Emphasis” tag (small, unobtrusive).
+
+STRUCTURE (include all sections, in this order):
+Part I — The 4 Big Takeaways (Short Answers — No Paragraphs)
+- Provide four takeaways that represent the conceptual spine shared across chapter + lectures.
+- For each takeaway, require exactly 3 bullet points, each 5–10 words, using clear sentence stems.
+
+Part II — Common Mistakes to Avoid
+- Provide 6–10 checkbox items targeting the most likely misconceptions, derived directly from the sources.
+
+Part III — Key Terms (Write-In Boxes)
+- Select ~12–18 key terms (prioritize overlap across chapter + decks).
+- Each term: a titled mini-box with write-in lines for “Definition” and “This matters because…”.
+- Make boxes print-friendly and resistant to awkward splitting.
+
+Part IV — Complete the Argument (Fill in the Blank)
+- Provide 10–14 fill-in items that force reconstruction of causal logic/argument (not trivia).
+- Keep blanks short (1–4 words).
+- Organize items into labeled subsections that reflect the lecture arc and chapter structure.
+
+Part V — Matching: Names, Titles, and Who They Were
+- Provide 8–12 terms matched to 8–12 descriptions.
+- Must print reliably as side-by-side content: use a table-based layout (not CSS grid).
+
+Part VI — Multiple Choice (Quiz Prep)
+- Provide 10 questions aligned with the most important content in chapter + decks.
+- Include plausible distractors that reflect “Common Mistakes.”
+
+Answer Key (WITH QUOTATION SUPPORT)
+- Include a complete answer key at the end:
+  - Part IV answers
+  - Part V matching pairs
+  - Part VI correct letters
+- For Part I–III, provide a “model answer sketch” (keywords/phrases, not paragraphs) to support grading.
+- Every answer in the key must include:
+  1) a short supporting quote (≤ 25 words) copied verbatim from the sources, AND
+  2) a source locator:
+     - For the textbook PDF: “Textbook, Ch. X PDF, p. __” ONLY if you can reliably identify the page; otherwise “Textbook PDF (location described)” such as “section heading / paragraph opener.”
+     - For the lecture decks: “Lecture Deck __, slide/title/section heading” (use headings or distinctive text anchors from the HTML).
+- Do not fabricate locators. If exact page/slide identification is not reliable, use a descriptive anchor that would let an instructor find it quickly.
+
+DESIGN SPEC:
+- Warm paper background, elegant serif body type, banner header.
+- Card-style sections with rounded corners.
+- Print settings: Letter, 0.75in margins, stable spacing, avoid page-break disasters.
+- No external assets, libraries, or images. Self-contained HTML/CSS only.
+
+DELIVERABLE:
+- Output ONLY the final HTML (complete document: <!DOCTYPE html> … </html>).
+- Do not include explanations, commentary, or questions—just the finished HTML.

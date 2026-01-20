@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>HIST 270 — Study Guide 2.0 — Chapter 1</title>
+<style>:root{
+  --paper:#f3efe6;
+  --ink:#2a2a26;
+  --muted:#5a5a52;
+  --card:#ffffff;
+  --border:#d7d1c3;
+  --accent:#8a2d3c;
+  --accent2:#5a2f69;
+  --shadow: 0 10px 26px rgba(0,0,0,.08);
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.35;
+}
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 18px 28px;
+}
+.banner{
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  color: #f6f2ea;
+  padding: 20px 18px 18px;
+  border-bottom: 3px solid rgba(255,255,255,.2);
+}
+.banner-inner{
+  max-width: 980px;
+  margin: 0 auto;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.banner h1{
+  margin:0 0 6px;
+  font-size: 22px;
+  letter-spacing:.2px;
+}
+.banner .sub{
+  margin:0;
+  opacity:.95;
+  font-size: 14px;
+}
+.tip{
+  background:#111;
+  color:#fff;
+  padding:10px 12px;
+  border-radius:10px;
+  max-width: 360px;
+  border: 2px solid rgba(255,255,255,.25);
+}
+.tip strong{display:block; font-size: 13px; letter-spacing:.4px;}
+.tip span{display:block; font-size: 12.5px; opacity:.95; margin-top:2px;}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 14px;
+  margin: 14px 0;
+}
+.card h2{
+  margin:0 0 10px;
+  font-size: 18px;
+  color: #1f1f1b;
+}
+.kicker{
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top:-4px;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align:center;
+}
+/* Part I */
+.takeaway{
+  border:1px dashed rgba(0,0,0,.16);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  margin: 10px 0;
+}
+.takeaway h3{
+  margin:0 0 6px;
+  font-size: 15.5px;
+  color:#1f1f1b;
+}
+.takeaway ul{margin: 0; padding-left: 18px;}
+.takeaway li{margin: 5px 0;}
+/* Checkboxes */
+.check-grid{display:grid; grid-template-columns: 1fr; gap:10px;}
+.check-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size: 14px;
+}
+.box{
+  width: 16px; height: 16px;
+  border: 2px solid #3a3a34;
+  border-radius: 3px;
+  margin-top:2px;
+  flex:0 0 auto;
+  background:#fff;
+}
+/* Key Terms table */
+.term-table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.term-table td{vertical-align:top; width:50%;}
+.term-box{
+  border:1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  background: #fffdf8;
+}
+.term-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:8px;
+}
+.term-title{font-weight:700; font-size: 14.5px;}
+.tag{
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.14);
+  color:#2b2b26;
+  background:#f2efe6;
+  white-space:nowrap;
+}
+.term-section{margin-top:10px;}
+.term-label{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing:.2px;
+}
+.write-area{border:1px solid rgba(0,0,0,.16); border-radius:10px; padding: 8px 10px; background:#fff;}
+.write-line{
+  height: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.28);
+}
+.write-line:last-child{border-bottom:none;}
+/* Fill in the blank */
+.fill-wrap{display:flex; flex-direction:column; gap:10px;}
+.fill-item{display:flex; gap:10px; align-items:flex-start; font-size: 14px;}
+.fill-num{width: 28px; font-weight:700;}
+.blank{
+  display:inline-block;
+  border-bottom: 2px solid #333;
+  transform: translateY(-1px);
+  margin: 0 .25em;
+}
+/* Matching table */
+.match-table{
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.match-table th, .match-table td{
+  border:1px solid var(--border);
+  padding: 10px 10px;
+  vertical-align:top;
+}
+.match-table th{
+  background:#f7f3ea;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing:.6px;
+}
+.match-col ol{margin:0; padding-left: 18px;}
+.match-col li{margin: 6px 0;}
+/* Multiple choice */
+.mc-q{border:1px solid rgba(0,0,0,.12); border-radius: 12px; padding: 12px 12px 10px; margin: 10px 0; background:#fffdf8;}
+.mc-stem{font-size:14px; margin-bottom: 8px;}
+.mc-num{font-weight:700;}
+.mc-opt{display:flex; gap:10px; margin: 6px 0; align-items:flex-start;}
+.mc-letter{font-weight:700; width: 20px;}
+/* -------- Print -------- */
+@page{
+  size: Letter;
+  margin: 0.75in;
+}
+@media print{
+  body{background:#fff;}
+  .banner{border-bottom:none;}
+  .card{box-shadow:none;}
+  .container{padding: 0;}
+  h1,h2,h3{break-after:avoid-page;}
+  .card, .takeaway, .term-box, .mc-q{break-inside: avoid; page-break-inside: avoid;}
+  .term-table{border-spacing: 8px;}
+  .tip{border:2px solid #000;}
+  a{color:inherit; text-decoration:none;}
+}</style>
+</head>
+<body>
+<header class="banner">
+<div class="banner-inner">
+<div>
+<h1>HIST 270 — History of China — Study Guide 2.0</h1>
+<p class="sub">Chapter 1 — China in the Bronze Age: The Shang and Zhou (1500–771 BCE)</p>
+</div>
+<div class="tip">
+<strong>PDF TIP (IMPORTANT)</strong>
+<span>When you print / Save as PDF in Chrome or Edge, turn <strong>Background graphics</strong> ON so the banner prints correctly.</span>
+</div>
+</div>
+</header>
+<main class="container">
+<section class="card"><h2>Part I — The 4 Big Takeaways (Short Answers — No Paragraphs)</h2><div class="kicker">Write short phrases. No paragraphs. Keep it tight.</div><div class="kicker"><strong>Instruction:</strong> Keep these four in your head while you do Parts II–VI. If you can’t connect an answer to a takeaway, you’re probably memorizing trivia.</div><div class="takeaway"><h3>Takeaway 1 — Evidence turns “mythic time” into history</h3><ul><li>This period shows archaeology confirms written claims.</li><li>This matters because oracle bones reveal state religion.</li><li>This matters because Anyang anchors Shang chronology.</li></ul></div><div class="takeaway"><h3>Takeaway 2 — Kings ruled by ritual as much as force</h3><ul><li>This period shows kings mediated ancestors and Di.</li><li>This matters because divination organized state decisions.</li><li>This matters because bronze vessels signaled elite power.</li></ul></div><div class="takeaway"><h3>Takeaway 3 — Zhou legitimation was conditional, not permanent</h3><ul><li>This period shows Heaven can withdraw legitimacy.</li><li>This matters because virtue explains dynastic change.</li><li>This matters because rebellion can be morally framed.</li></ul></div><div class="takeaway"><h3>Takeaway 4 — Early China was plural, not monolithic</h3><ul><li>This period shows regional cultures shaped “China.”</li><li>This matters because Sanxingdui complicates the core.</li><li>This matters because Zhou labels built boundaries.</li></ul></div></section>
+<section class="card">
+<h2>Part II — Common Mistakes to Avoid</h2>
+<div class="kicker">Check each misconception you will actively avoid on the exam.</div>
+<div class="check-grid"><div class="check-item"><div class="box"></div><div>Treating the Shang as “myth” like Xia (Shang is verified).</div></div><div class="check-item"><div class="box"></div><div>Assuming the Mandate of Heaven = permanent divine right.</div></div><div class="check-item"><div class="box"></div><div>Thinking oracle bones are “just religion,” not governance.</div></div><div class="check-item"><div class="box"></div><div>Reducing bronze to weapons (ignore ritual function).</div></div><div class="check-item"><div class="box"></div><div>Forgetting only the king performed oracle divination.</div></div><div class="check-item"><div class="box"></div><div>Reading “barbarians” as objective ethnicity (it’s a Zhou category).</div></div><div class="check-item"><div class="box"></div><div>Assuming Sanxingdui was Shang-controlled or “primitive.”</div></div><div class="check-item"><div class="box"></div><div>Misplacing the 771 BCE crisis and the move to Luoyang.</div></div></div>
+</section>
+<section class="card">
+<h2>Part III — Key Terms (Write‑In Boxes)</h2>
+<div class="kicker">Each term gets its own box. Definition + “This matters because…”</div>
+<table class="term-table" role="presentation"><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Oracle bones</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Anyang (last Shang capital)</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Wang Yirong</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Di (high god)</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Ancestor worship</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Bronze ritual vessels</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Mandate of Heaven (天命)</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Fengjian (封建)</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Book of Documents (“Great Declaration”)</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">771 BCE crisis</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Luoyang</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Sanxingdui (三星堆)</div>
+<div class="tag">Balanced</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Liangzhu culture</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Loess</div>
+<div class="tag">Text Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr><tr><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Yellow River</div>
+<div class="tag">Text Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td><td>
+<div class="term-box">
+<div class="term-head">
+<div class="term-title">Chariot technology (hypothesis)</div>
+<div class="tag">Lecture Emphasis</div>
+</div>
+<div class="term-section">
+<div class="term-label">Definition</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+<div class="term-section">
+<div class="term-label">This matters because…</div>
+<div class="write-area">
+<div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</section>
+<section class="card"><h2>Part IV — Complete the Argument (Fill in the Blank)</h2><div class="kicker">Blanks are short (1–4 words). Focus on causal logic, not trivia.</div><h3 style="margin: 12px 0 6px; font-size: 15.5px;">A. Evidence &amp; the Shang state</h3><div class="fill-wrap"><div class="fill-item"><div class="fill-num">1.</div><div>Shang: Verified! Archaeology (Anyang ruins) + Inscriptions (<span class="blank" style="min-width:120px;"></span>) = Real history.</div></div><div class="fill-item"><div class="fill-num">2.</div><div>Only the <span class="blank" style="min-width:120px;"></span> could perform oracle bone divination.</div></div><div class="fill-item"><div class="fill-num">3.</div><div>Bronze wasn’t just for weapons—it was <span class="blank" style="min-width:120px;"></span> technology.</div></div><div class="fill-item"><div class="fill-num">4.</div><div>The Shang Dynasty ended around <span class="blank" style="min-width:120px;"></span> BCE when the Zhou conquered them.</div></div></div><h3 style="margin: 12px 0 6px; font-size: 15.5px;">B. Zhou legitimacy: the Mandate of Heaven</h3><div class="fill-wrap"><div class="fill-item"><div class="fill-num">5.</div><div>Mandate of Heaven = conditional authority based on <span class="blank" style="min-width:120px;"></span>.</div></div><div class="fill-item"><div class="fill-num">6.</div><div>Heaven can <span class="blank" style="min-width:120px;"></span> the mandate from corrupt rulers.</div></div><div class="fill-item"><div class="fill-num">7.</div><div>Book of Documents logic: Heaven sees/hears as the <span class="blank" style="min-width:120px;"></span>.</div></div></div><h3 style="margin: 12px 0 6px; font-size: 15.5px;">C. Governing by networks: fengjian and crisis</h3><div class="fill-wrap"><div class="fill-item"><div class="fill-num">8.</div><div>Fengjian = enfeoffment: kin-based land grants + ritual/military <span class="blank" style="min-width:120px;"></span>.</div></div><div class="fill-item"><div class="fill-num">9.</div><div>Geographic expansion weakens <span class="blank" style="min-width:120px;"></span> authority over time.</div></div><div class="fill-item"><div class="fill-num">10.</div><div>771 BCE: Rong and Di attack the Zhou <span class="blank" style="min-width:120px;"></span>.</div></div><div class="fill-item"><div class="fill-num">11.</div><div>After 771 BCE, the capital moves east to <span class="blank" style="min-width:120px;"></span>.</div></div></div><h3 style="margin: 12px 0 6px; font-size: 15.5px;">D. Diversity &amp; boundaries</h3><div class="fill-wrap"><div class="fill-item"><div class="fill-num">12.</div><div>In Zhou texts, “barbarians” works as a political/ritual <span class="blank" style="min-width:120px;"></span> marker.</div></div><div class="fill-item"><div class="fill-num">13.</div><div>Sanxingdui shows a major Bronze Age culture with no <span class="blank" style="min-width:120px;"></span> system (so far).</div></div><div class="fill-item"><div class="fill-num">14.</div><div>Chariot technology probably came from Central Asia/<span class="blank" style="min-width:120px;"></span>.</div></div></div></section>
+<section class="card">
+<h2>Part V — Matching: Names, Titles, and Who They Were</h2>
+<div class="kicker">Match the left column (A–J) to the right column (1–10).</div>
+<table class="match-table" role="presentation">
+<thead>
+<tr>
+<th style="width:48%;">A–J — Terms</th>
+<th style="width:52%;">1–10 — Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="match-col">
+<ol type="A"><li>Wang Yirong</li><li>Anyang</li><li>Oracle bones</li><li>Di (high god)</li><li>Di Xin</li><li>Mandate of Heaven</li><li>Book of Documents (“Great Declaration”)</li><li>Fengjian (封建)</li><li>Luoyang</li><li>Sanxingdui</li></ol>
+</td>
+<td class="match-col">
+<ol><li>Scholar who noticed “dragon bones” were inscribed</li><li>Last Shang capital tied to major excavations</li><li>Divination medium with carved early writing</li><li>High god linked to kings and ancestors</li><li>Last Shang king portrayed as a cruel tyrant</li><li>Conditional right to rule based on virtue</li><li>Classic text used to justify Zhou legitimacy</li><li>Kin-based land grants with ritual/military duties</li><li>Eastern capital after 771 BCE crisis</li><li>Sichuan Bronze Age culture with unique ritual art</li></ol>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="card">
+<h2>Part VI — Multiple Choice (Quiz Prep)</h2>
+<div class="kicker">Circle ONE letter per question. Distractors are designed to mimic common mistakes.</div>
+
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">1.</span> The lectures call the Shang “verified” because:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Archaeology + oracle-bone inscriptions confirm it</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Zhou legends prove it</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>It used iron tools</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>It ruled all of East Asia</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">2.</span> According to the Shang lecture, who performed oracle-bone divination?</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Any scribe</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Only the king</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>Any noble family</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>Only bronze workers</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">3.</span> In the Shang lecture, bronze vessels are best described as:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Trade currency</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Ritual technology for ancestor ceremonies</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>Everyday cooking pots</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>Irrigation tools</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">4.</span> In the Zhou lecture, the Mandate of Heaven is:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Permanent divine right</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Conditional authority based on virtue</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>A written constitution</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>A military rank</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">5.</span> In the Book of Documents quote, Heaven is presented as:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Indifferent to human suffering</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Seeing/hearing as the people do</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>Opposed to rebellion in all cases</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>Only caring about rituals</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">6.</span> Fengjian (封建) refers to:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Merit exams for officials</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Kin-based land grants with ritual/military obligations</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>Urban merchant guilds</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>A single centralized bureaucracy</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">7.</span> Which is a key event of 771 BCE in the lecture timeline?</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>Zhou conquer Shang</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Rong and Di attack the Zhou capital</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>First oracle bones appear</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>Sanxingdui is founded</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">8.</span> Why does Sanxingdui matter for Chapter 1?</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>It proves Shang controlled Sichuan</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>It shows a distinct Bronze Age ritual system</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>It contains the earliest Zhou law code</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>It replaces Anyang as Shang capital</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">9.</span> In the Zhou lecture, “barbarians” is best understood as:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>A neutral ethnographic label</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>A political/ritual boundary marker</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>A modern racial category</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>A term for peasants</div></div>
+</div>
+
+<div class="mc-q">
+<div class="mc-stem"><span class="mc-num">10.</span> In the Regional Diversity lecture, chariot technology probably came from:</div>
+<div class="mc-opt"><div class="mc-letter">A.</div><div>South China coastal trade</div></div><div class="mc-opt"><div class="mc-letter">B.</div><div>Central Asia/steppe</div></div><div class="mc-opt"><div class="mc-letter">C.</div><div>Japan</div></div><div class="mc-opt"><div class="mc-letter">D.</div><div>Lower Yangtze only</div></div>
+</div>
+</section>
+<div class="footer">Print, write on this, bring ONLY this study guide. No extra paper.</div>
+</main>
+</body>
+</html>
